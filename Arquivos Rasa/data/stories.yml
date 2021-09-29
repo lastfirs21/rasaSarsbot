@@ -1,0 +1,31 @@
+version: "2.0"
+
+stories:
+
+
+- story: história saude ruim - nega diagnóstico (finalizada)
+  steps:
+  - intent: saudar
+  - action: utter_saudar
+  - intent: saudeRuim
+  - action: utter_saudeRuim
+  - intent: negar
+  - action: utter_dizerAdeus
+
+- story: história saude boa - duvida sobre covid
+  steps:
+  - intent: saudar
+  - action: utter_saudar
+  - intent: saudeBoa
+  - action: utter_saudeBoa
+  - intent: o_que_e_o_covid
+  - action: utter_o_que_e_o_covid
+  - action: utter_ajudo_em_algo_mais
+  - intent: negar
+  - action: utter_dizerAdeus
+
+- story: caminhoListarUbs
+  steps:
+  - intent: listCidades
+  - action: action_list_ubs
+

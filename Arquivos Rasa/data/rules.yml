@@ -1,0 +1,18 @@
+version: "2.0"
+
+rules: // regras são as q ocorrem de forma direta, independente do momento em q o usuário disser algo.
+
+- rule: Dizer Tchau, sempre que o usuário se deespedir
+  steps:
+  - intent: dizerAdeus
+  - action: utter_dizerAdeus
+
+- rule: Dizer que é mentira, quando for fakenews
+  steps:
+  - intent: eFakeNews
+  - action: utter_eFakeNews
+
+- rule: Dizer que é verdade, quando for verdade
+  steps:
+  - intent: noeFakeNews
+  - action: utter_noeFakeNews

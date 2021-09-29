@@ -1,0 +1,39 @@
+
+intents: // interação do usuário com o bot , que o bot vai responder
+- saudar
+- dizerAdeus
+- afirmar
+- negar
+- eFakeNews
+- saudeRuim
+- saudeBoa
+- noeFakeNews
+- o_que_e_o_covid
+- listCidades
+
+responses: // respostas do bot para cada interação do usuário
+  utter_saudar:
+  - text: Ola, tudo bem, Como esta sua saúde?
+  utter_como_posso_ajudar:
+  - text: Você tem alguma dúvida sobre a Covid 19?
+  utter_ajudo_em_algo_mais:
+  - text: Ajudo em Algo Mais?
+  utter_saudeBoa:
+  - text: Que bom, fico Feliz que está bem, precisa de algum informação?
+  utter_saudeRuim:
+  - text: Vish, sério? Quer passar por um diagnóstico? Relaxa, vai se rápido!
+  utter_dizerAdeus:
+  - text: Até mais!!!
+  utter_eFakeNews:
+  - text: Nossa, quem te contou isso? É uma mentira muito cabeluda viu, você foi enganado!
+  utter_noeFakeNews:
+  - text: Realmente, isso é realmente verdade, pode confiar!
+  utter_o_que_e_o_covid:
+  - text: O novo vírus é originário de morcegos, assim como a maioria dos outros coronavírus. O vírus sofreu mutação e passou a infectar também humanos. As pesquisas nos permitem concluir que essa mutação foi um processo natural e não induzido pelo homem em laboratório.
+  utter_listUbs:
+  - text: Cidade = {Cidade} Ubs. {Ubs} {Local}
+
+ 
+actions:
+  - action_list_ubs
+
